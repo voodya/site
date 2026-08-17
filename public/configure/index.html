@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Настройка портфолио</title>
+    <style>
+      :root { color-scheme: dark; font-family: Inter, system-ui, sans-serif; background: #0f172a; color: #e2e8f0; }
+      body { max-width: 1100px; margin: 0 auto; padding: 32px 20px; }
+      h1 { margin-bottom: 6px; } p { color: #94a3b8; } .panel { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; margin-top: 24px; }
+      input, textarea { box-sizing: border-box; width: 100%; background: #020617; color: #f8fafc; border: 1px solid #475569; border-radius: 8px; padding: 12px; font: inherit; }
+      textarea { min-height: 65vh; resize: vertical; font-family: ui-monospace, Consolas, monospace; font-size: 13px; line-height: 1.45; }
+      button { cursor: pointer; border: 0; border-radius: 8px; padding: 11px 16px; background: #2563eb; color: white; font-weight: 700; } button.secondary { background: #334155; } .actions { display: flex; gap: 10px; margin-top: 14px; } #status { min-height: 24px; } .error { color: #fca5a5; } .success { color: #86efac; } [hidden] { display: none !important; }
+    </style>
+  </head>
+  <body>
+    <h1>Настройка портфолио</h1>
+    <p>Изменения публикуются сразу после сохранения. Перед сохранением JSON проверяется в браузере и на сервере.</p>
+    <section id="login-panel" class="panel">
+      <form id="login-form"><label>Пароль<input id="password" type="password" autocomplete="current-password" required /></label><div class="actions"><button>Войти</button></div></form>
+    </section>
+    <section id="editor-panel" class="panel" hidden>
+      <textarea id="content" spellcheck="false" aria-label="Content JSON"></textarea>
+      <div class="actions"><button id="save">Сохранить</button><button id="logout" class="secondary">Выйти</button></div>
+    </section>
+    <p id="status" role="status"></p>
+    <script>
+      const $ = (id) => document.getElementById(id);
+      const status = (text, className = '') => { $('status').textContent = text; $('status').className = className; };
+      const request = async (url, options) => { const response = await fetch(url, options); const body = await response.json().catch(() => ({})); if (!response.ok) throw new Error(body.error || 'Ошибка запроса.'); return body; };
+      async function load() { $('content').value = JSON.stringify(await request('/api/configure/content'), null, 2); $('login-panel').hidden = true; $('editor-panel').hidden = false; }
+      $('login-form').addEventListener('submit', async (event) => { event.preventDefault(); try { await request('/api/configure/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ password: $('password').value }) }); $('password').value = ''; await load(); status('Вход выполнен.', 'success'); } catch (error) { status(error.message, 'error'); } });
+      $('save').addEventListener('click', async () => { try { const parsed = JSON.parse($('content').value); if (!Array.isArray(parsed)) throw new Error('Корневое значение должно быть массивом.'); await request('/api/configure/content', { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(parsed) }); $('content').value = JSON.stringify(parsed, null, 2); status('Сохранено. Сайт уже использует новую версию.', 'success'); } catch (error) { status(error.message, 'error'); } });
+      $('logout').addEventListener('click', async () => { await request('/api/configure/logout', { method: 'POST' }); location.reload(); });
+      request('/api/configure/session').then(({ authenticated }) => { if (authenticated) load(); }).catch((error) => status(error.message, 'error'));
+    </script>
+  </body>
+</html>

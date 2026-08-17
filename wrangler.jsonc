@@ -2,7 +2,10 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "portfolio",
   "compatibility_date": "2026-08-17",
+  "main": "./src/worker.js",
   "assets": {
-    "directory": "./dist"
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/assets/Content.json", "/api/configure/*", "/configure"]
   }
 }

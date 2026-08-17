@@ -62,6 +62,27 @@ docker build -t portfolio-site:latest .
 docker run -d --name portfolio-site --restart unless-stopped -p 8080:80 portfolio-site:latest
 ```
 
+## Защищённое редактирование `/configure`
+
+В проекте настроен Cloudflare Worker, который защищает редактор паролем и сохраняет изменения в Cloudflare KV. Для работы в Cloudflare создайте KV namespace (например, `portfolio-content`) и добавьте к Worker binding:
+
+```text
+Variable name: CONFIG_CONTENT
+Type: KV Namespace
+Value: portfolio-content
+```
+
+Также добавьте два **Secret** (не обычные Variables):
+
+```text
+CONFIGURE_PASSWORD        # пароль для входа
+CONFIGURE_SESSION_SECRET  # случайная длинная строка для подписи сессии
+```
+
+После следующего деплоя редактор доступен по `https://ваш-домен/configure/`. В нём можно отредактировать и сохранить JSON. Публичный сайт автоматически получает сохранённую в KV версию по прежнему адресу `/assets/Content.json`; если KV ещё пуст, используется файл из репозитория.
+
+В конфигурации [wrangler.jsonc](wrangler.jsonc) Worker уже подключён к собранной папке `dist`. Не удаляйте `main`, `assets.binding` и `assets.run_worker_first` из этого файла.
+
 После запуска сайт будет доступен по `http://localhost:8080`. На сервере замените `8080` на свободный внешний порт или подключите контейнер к reverse proxy с HTTPS.
 
 Чтобы обновить опубликованную версию после изменений:
