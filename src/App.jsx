@@ -700,7 +700,7 @@ const ContactsView = () => {
 
             <div className="flex justify-center gap-6">
                 <SocialButton href="https://t.me/rigitbidy" icon={Send} label="Telegram" />
-                <SocialButton href="https://linkedin.com/in/владимир-васильев-868975243/" icon={Linkedin} label="LinkedIn" />
+                <SocialButton href="https://www.linkedin.com/in/vladimir-vasilev-868975243/" icon={Linkedin} label="LinkedIn" />
                 <SocialButton href="https://hh.ru/resume/322fefcaff0e4e3b9f0039ed1f6c3842415534" icon={Briefcase} label="HeadHunter" />
                 <SocialButton href="https://github.com/voodya" icon={Github} label="GitHub" />
             </div>
