@@ -759,7 +759,12 @@ export default function App() {
             }
         };
 
-        reportVisit();
+        const TIME_ON_SITE = 5000; 
+
+        // Запускаем таймер и сохраняем его ID
+        const visitTimer = setTimeout(() => {
+            reportVisit();
+        }, TIME_ON_SITE);
 
         // ОБНОВЛЕНИЕ: Добавлен параметр для сброса кеша браузера (Timestamp)
         const cacheBuster = new Date().getTime();
@@ -791,6 +796,7 @@ export default function App() {
                 setError(err.message);
                 setIsLoading(false);
             });
+            return () => clearTimeout(visitTimer);
     }, []);
 
     if (isLoading) {
