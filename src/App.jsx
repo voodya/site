@@ -2,6 +2,13 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { createPortal } from 'react-dom';
 import { Map, Briefcase, Mail, X, ExternalLink, Send, Linkedin, Github, Globe, Calendar, Laptop, Handshake } from 'lucide-react';
 
+const SOCIAL_LINKS = {
+    telegram: 'https://t.me/rigitbidy',
+    linkedin: 'https://www.linkedin.com/in/vladimir-vasilev-868975243/',
+    headhunter: 'https://hh.ru/resume/322fefcaff0e4e3b9f0039ed1f6c3842415534',
+    github: 'https://github.com/voodya',
+};
+
 // --- ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ ---
 
 // Функция для форматирования даты (из "2023-01" в "Январь 2023")
@@ -105,16 +112,16 @@ const RoadmapView = ({ data, onViewProjects }) => {
 
                     {/* СОЦСЕТИ ПОД ФОТО */}
                     <div className="flex justify-center gap-4 text-slate-400">
-                        <a href="https://t.me/rigitbidy" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="Telegram">
+                        <a href={SOCIAL_LINKS.telegram} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="Telegram">
                             <Send size={20} />
                         </a>
-                        <a href="https://linkedin.com/in/владимир-васильев-868975243/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="LinkedIn">
+                        <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="LinkedIn">
                             <Linkedin size={20} />
                         </a>
-                        <a href="https://hh.ru/resume/322fefcaff0e4e3b9f0039ed1f6c3842415534" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="HeadHunter">
+                        <a href={SOCIAL_LINKS.headhunter} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="HeadHunter">
                             <Briefcase size={20} />
                         </a>
-                        <a href="https://github.com/voodya" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="GitHub">
+                        <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="GitHub">
                             <Github size={20} />
                         </a>
                     </div>
@@ -699,10 +706,10 @@ const ContactsView = () => {
             </div>
 
             <div className="flex justify-center gap-6">
-                <SocialButton href="https://t.me/rigitbidy" icon={Send} label="Telegram" />
-                <SocialButton href="https://www.linkedin.com/in/vladimir-vasilev-868975243/" icon={Linkedin} label="LinkedIn" />
-                <SocialButton href="https://hh.ru/resume/322fefcaff0e4e3b9f0039ed1f6c3842415534" icon={Briefcase} label="HeadHunter" />
-                <SocialButton href="https://github.com/voodya" icon={Github} label="GitHub" />
+                <SocialButton href={SOCIAL_LINKS.telegram} icon={Send} label="Telegram" />
+                <SocialButton href={SOCIAL_LINKS.linkedin} icon={Linkedin} label="LinkedIn" />
+                <SocialButton href={SOCIAL_LINKS.headhunter} icon={Briefcase} label="HeadHunter" />
+                <SocialButton href={SOCIAL_LINKS.github} icon={Github} label="GitHub" />
             </div>
         </div>
     );
