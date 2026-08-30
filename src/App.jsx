@@ -736,6 +736,8 @@ export default function App() {
     };
 
     useEffect(() => {
+
+        document.title = "Vladimir Vasilev portfolio";
         // Логика отправки данных о визите
         const reportVisit = async () => {
             // Получаем параметры из URL после знака вопроса
