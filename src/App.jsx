@@ -843,27 +843,38 @@ export default function App() {
                         <span>Васильев Владимир</span>
                     </div>
 
-                    {/* ОБНОВЛЕНИЕ: flex-wrap позволяет кнопкам переноситься на новую строку, если не влезают */}
-                    <nav className="flex flex-wrap justify-center gap-2">
-                        <TabButton
-                            active={activeTab === 'roadmap'}
-                            onClick={() => setActiveTab('roadmap')}
-                            icon={Map}
-                            label="Роадмап"
-                        />
-                        <TabButton
-                            active={activeTab === 'portfolio'}
-                            onClick={() => setActiveTab('portfolio')}
-                            icon={Briefcase}
-                            label="Портфолио"
-                        />
-                        <TabButton
-                            active={activeTab === 'contacts'}
-                            onClick={() => setActiveTab('contacts')}
-                            icon={Mail}
-                            label="Контакты"
-                        />
-                    </nav>
+                    <div className="flex flex-wrap items-center justify-center gap-2">
+                        {/* ОБНОВЛЕНИЕ: flex-wrap позволяет кнопкам переноситься на новую строку, если не влезают */}
+                        <nav className="flex flex-wrap justify-center gap-2">
+                            <TabButton
+                                active={activeTab === 'roadmap'}
+                                onClick={() => setActiveTab('roadmap')}
+                                icon={Map}
+                                label="Роадмап"
+                            />
+                            <TabButton
+                                active={activeTab === 'portfolio'}
+                                onClick={() => setActiveTab('portfolio')}
+                                icon={Briefcase}
+                                label="Портфолио"
+                            />
+                            <TabButton
+                                active={activeTab === 'contacts'}
+                                onClick={() => setActiveTab('contacts')}
+                                icon={Mail}
+                                label="Контакты"
+                            />
+                        </nav>
+                        <a
+                            href="https://calendly.com/vvvjobrigit/1-hour-one-on-one"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:bg-blue-500 hover:shadow-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900 md:px-5"
+                        >
+                            <Calendar size={18} />
+                            <span>Запланировать встречу сейчас</span>
+                        </a>
+                    </div>
                 </div>
             </header>
 
