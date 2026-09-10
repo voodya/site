@@ -730,7 +730,10 @@ const SocialButton = ({ href, icon: Icon, label }) => (
 );
 
 export default function App() {
-    const [activeTab, setActiveTab] = useState('roadmap');
+    // Use the fragment for direct links so analytics query parameters stay untouched.
+    const [activeTab, setActiveTab] = useState(() =>
+        window.location.hash === '#portfolio' ? 'portfolio' : 'roadmap'
+    );
     const [portfolioData, setPortfolioData] = useState([]);
     const [portfolioFilter, setPortfolioFilter] = useState('All');
     const [isLoading, setIsLoading] = useState(true);
