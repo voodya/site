@@ -1,0 +1,1425 @@
+{
+  "Folder": "F:\\Some junk\\Content",
+  "CheckedAt": "2026-09-25T15:48:09.6704624+04:00",
+  "LimitBytes": 26214400,
+  "FileCount": 202,
+  "TotalBytes": 796446971.0,
+  "FitsCount": 195,
+  "OversizedCount": 7,
+  "Files": [
+    {
+      "Path": "F:\\Some junk\\Content\\1.jpg",
+      "RelativePath": "1.jpg",
+      "Bytes": 24041,
+      "MiB": 0.023,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake.png",
+      "RelativePath": "AppCake.png",
+      "Bytes": 13689,
+      "MiB": 0.013,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\1.png",
+      "RelativePath": "AppCake\\Big Template\\1.png",
+      "Bytes": 135293,
+      "MiB": 0.129,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\10.png",
+      "RelativePath": "AppCake\\Big Template\\10.png",
+      "Bytes": 3167,
+      "MiB": 0.003,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\11.png",
+      "RelativePath": "AppCake\\Big Template\\11.png",
+      "Bytes": 224931,
+      "MiB": 0.215,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\12.png",
+      "RelativePath": "AppCake\\Big Template\\12.png",
+      "Bytes": 20372,
+      "MiB": 0.019,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\13.png",
+      "RelativePath": "AppCake\\Big Template\\13.png",
+      "Bytes": 20439,
+      "MiB": 0.019,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\14.png",
+      "RelativePath": "AppCake\\Big Template\\14.png",
+      "Bytes": 64433,
+      "MiB": 0.061,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\15.png",
+      "RelativePath": "AppCake\\Big Template\\15.png",
+      "Bytes": 58205,
+      "MiB": 0.056,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\16.png",
+      "RelativePath": "AppCake\\Big Template\\16.png",
+      "Bytes": 18517,
+      "MiB": 0.018,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\17.png",
+      "RelativePath": "AppCake\\Big Template\\17.png",
+      "Bytes": 14616,
+      "MiB": 0.014,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\18.png",
+      "RelativePath": "AppCake\\Big Template\\18.png",
+      "Bytes": 19931,
+      "MiB": 0.019,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\2.png",
+      "RelativePath": "AppCake\\Big Template\\2.png",
+      "Bytes": 5452,
+      "MiB": 0.005,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\3.png",
+      "RelativePath": "AppCake\\Big Template\\3.png",
+      "Bytes": 3914,
+      "MiB": 0.004,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\4.png",
+      "RelativePath": "AppCake\\Big Template\\4.png",
+      "Bytes": 28161,
+      "MiB": 0.027,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\5.png",
+      "RelativePath": "AppCake\\Big Template\\5.png",
+      "Bytes": 4662,
+      "MiB": 0.004,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\6.png",
+      "RelativePath": "AppCake\\Big Template\\6.png",
+      "Bytes": 43893,
+      "MiB": 0.042,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\7.png",
+      "RelativePath": "AppCake\\Big Template\\7.png",
+      "Bytes": 39424,
+      "MiB": 0.038,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\8.png",
+      "RelativePath": "AppCake\\Big Template\\8.png",
+      "Bytes": 6955,
+      "MiB": 0.007,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\9.png",
+      "RelativePath": "AppCake\\Big Template\\9.png",
+      "Bytes": 8949,
+      "MiB": 0.009,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Big Template\\Quiz Finish.png",
+      "RelativePath": "AppCake\\Big Template\\Quiz Finish.png",
+      "Bytes": 4962,
+      "MiB": 0.005,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Content.json",
+      "RelativePath": "AppCake\\Content.json",
+      "Bytes": 24190,
+      "MiB": 0.023,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\1.mov",
+      "RelativePath": "AppCake\\Desk Builder\\1.mov",
+      "Bytes": 10107364,
+      "MiB": 9.639,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\1.png",
+      "RelativePath": "AppCake\\Desk Builder\\1.png",
+      "Bytes": 56621,
+      "MiB": 0.054,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\10.png",
+      "RelativePath": "AppCake\\Desk Builder\\10.png",
+      "Bytes": 79882,
+      "MiB": 0.076,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\11.png",
+      "RelativePath": "AppCake\\Desk Builder\\11.png",
+      "Bytes": 43035,
+      "MiB": 0.041,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\12.png",
+      "RelativePath": "AppCake\\Desk Builder\\12.png",
+      "Bytes": 33566,
+      "MiB": 0.032,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\2.png",
+      "RelativePath": "AppCake\\Desk Builder\\2.png",
+      "Bytes": 63328,
+      "MiB": 0.06,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\3.png",
+      "RelativePath": "AppCake\\Desk Builder\\3.png",
+      "Bytes": 46411,
+      "MiB": 0.044,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\4.png",
+      "RelativePath": "AppCake\\Desk Builder\\4.png",
+      "Bytes": 78234,
+      "MiB": 0.075,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\5.png",
+      "RelativePath": "AppCake\\Desk Builder\\5.png",
+      "Bytes": 57883,
+      "MiB": 0.055,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\6.png",
+      "RelativePath": "AppCake\\Desk Builder\\6.png",
+      "Bytes": 43993,
+      "MiB": 0.042,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\7.png",
+      "RelativePath": "AppCake\\Desk Builder\\7.png",
+      "Bytes": 57932,
+      "MiB": 0.055,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\8.png",
+      "RelativePath": "AppCake\\Desk Builder\\8.png",
+      "Bytes": 45492,
+      "MiB": 0.043,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\9.png",
+      "RelativePath": "AppCake\\Desk Builder\\9.png",
+      "Bytes": 51055,
+      "MiB": 0.049,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Desk Builder\\Content.json",
+      "RelativePath": "AppCake\\Desk Builder\\Content.json",
+      "Bytes": 24190,
+      "MiB": 0.023,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\1.png",
+      "RelativePath": "AppCake\\Manga Reader\\1.png",
+      "Bytes": 62463,
+      "MiB": 0.06,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\10.png",
+      "RelativePath": "AppCake\\Manga Reader\\10.png",
+      "Bytes": 54179,
+      "MiB": 0.052,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\11.png",
+      "RelativePath": "AppCake\\Manga Reader\\11.png",
+      "Bytes": 68112,
+      "MiB": 0.065,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\12.png",
+      "RelativePath": "AppCake\\Manga Reader\\12.png",
+      "Bytes": 29442,
+      "MiB": 0.028,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\2.png",
+      "RelativePath": "AppCake\\Manga Reader\\2.png",
+      "Bytes": 39455,
+      "MiB": 0.038,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\3.png",
+      "RelativePath": "AppCake\\Manga Reader\\3.png",
+      "Bytes": 48985,
+      "MiB": 0.047,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\4.png",
+      "RelativePath": "AppCake\\Manga Reader\\4.png",
+      "Bytes": 29434,
+      "MiB": 0.028,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\5.png",
+      "RelativePath": "AppCake\\Manga Reader\\5.png",
+      "Bytes": 52218,
+      "MiB": 0.05,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\6.png",
+      "RelativePath": "AppCake\\Manga Reader\\6.png",
+      "Bytes": 28513,
+      "MiB": 0.027,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\7.png",
+      "RelativePath": "AppCake\\Manga Reader\\7.png",
+      "Bytes": 41867,
+      "MiB": 0.04,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\8.png",
+      "RelativePath": "AppCake\\Manga Reader\\8.png",
+      "Bytes": 43644,
+      "MiB": 0.042,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Manga Reader\\9.png",
+      "RelativePath": "AppCake\\Manga Reader\\9.png",
+      "Bytes": 25819,
+      "MiB": 0.025,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\1.mov",
+      "RelativePath": "AppCake\\Mods For Minecraft\\1.mov",
+      "Bytes": 5694514,
+      "MiB": 5.431,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\1.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\1.png",
+      "Bytes": 50701,
+      "MiB": 0.048,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\10.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\10.png",
+      "Bytes": 57329,
+      "MiB": 0.055,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\11.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\11.png",
+      "Bytes": 46507,
+      "MiB": 0.044,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\12.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\12.png",
+      "Bytes": 47104,
+      "MiB": 0.045,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\13.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\13.png",
+      "Bytes": 30992,
+      "MiB": 0.03,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\14.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\14.png",
+      "Bytes": 43268,
+      "MiB": 0.041,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\2.mp4",
+      "RelativePath": "AppCake\\Mods For Minecraft\\2.mp4",
+      "Bytes": 75520908,
+      "MiB": 72.022,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\2.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\2.png",
+      "Bytes": 32153,
+      "MiB": 0.031,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\3.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\3.png",
+      "Bytes": 85389,
+      "MiB": 0.081,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\4.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\4.png",
+      "Bytes": 46105,
+      "MiB": 0.044,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\5.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\5.png",
+      "Bytes": 35489,
+      "MiB": 0.034,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\6.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\6.png",
+      "Bytes": 30738,
+      "MiB": 0.029,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\7.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\7.png",
+      "Bytes": 60949,
+      "MiB": 0.058,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\8.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\8.png",
+      "Bytes": 52202,
+      "MiB": 0.05,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\9.png",
+      "RelativePath": "AppCake\\Mods For Minecraft\\9.png",
+      "Bytes": 26144,
+      "MiB": 0.025,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\1_no.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\1_no.png",
+      "Bytes": 81550,
+      "MiB": 0.078,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\1.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\1.png",
+      "Bytes": 83103,
+      "MiB": 0.079,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\12_no.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\12_no.png",
+      "Bytes": 62119,
+      "MiB": 0.059,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\13_no.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\13_no.png",
+      "Bytes": 86443,
+      "MiB": 0.082,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\2_no.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\2_no.png",
+      "Bytes": 57433,
+      "MiB": 0.055,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\2.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\2.png",
+      "Bytes": 89761,
+      "MiB": 0.086,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\3.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\3.png",
+      "Bytes": 48299,
+      "MiB": 0.046,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\4_no.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\4_no.png",
+      "Bytes": 64803,
+      "MiB": 0.062,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\4.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\4.png",
+      "Bytes": 45049,
+      "MiB": 0.043,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\5.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\5.png",
+      "Bytes": 72616,
+      "MiB": 0.069,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\6.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\6.png",
+      "Bytes": 67632,
+      "MiB": 0.064,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\7_no.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\7_no.png",
+      "Bytes": 85852,
+      "MiB": 0.082,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Mods For Stumble Guys\\7.png",
+      "RelativePath": "AppCake\\Mods For Stumble Guys\\7.png",
+      "Bytes": 45490,
+      "MiB": 0.043,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Qwizes\\1.png",
+      "RelativePath": "AppCake\\Qwizes\\1.png",
+      "Bytes": 28759,
+      "MiB": 0.027,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Qwizes\\2.png",
+      "RelativePath": "AppCake\\Qwizes\\2.png",
+      "Bytes": 25918,
+      "MiB": 0.025,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Qwizes\\3.png",
+      "RelativePath": "AppCake\\Qwizes\\3.png",
+      "Bytes": 35694,
+      "MiB": 0.034,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Skin Maker\\1.png",
+      "RelativePath": "AppCake\\Skin Maker\\1.png",
+      "Bytes": 41901,
+      "MiB": 0.04,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Skin Maker\\2.png",
+      "RelativePath": "AppCake\\Skin Maker\\2.png",
+      "Bytes": 43291,
+      "MiB": 0.041,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Skin Maker\\3.png",
+      "RelativePath": "AppCake\\Skin Maker\\3.png",
+      "Bytes": 34597,
+      "MiB": 0.033,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Skin Maker\\4.png",
+      "RelativePath": "AppCake\\Skin Maker\\4.png",
+      "Bytes": 83453,
+      "MiB": 0.08,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\AppCake\\Skin Maker\\5.png",
+      "RelativePath": "AppCake\\Skin Maker\\5.png",
+      "Bytes": 91404,
+      "MiB": 0.087,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Ava.jpg",
+      "RelativePath": "Ava.jpg",
+      "Bytes": 132478,
+      "MiB": 0.126,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Content.json",
+      "RelativePath": "Content.json",
+      "Bytes": 9235,
+      "MiB": 0.009,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Default.png",
+      "RelativePath": "Default.png",
+      "Bytes": 10486,
+      "MiB": 0.01,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\desktop.ini",
+      "RelativePath": "desktop.ini",
+      "Bytes": 98,
+      "MiB": 0.0,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\edited_content.json",
+      "RelativePath": "edited_content.json",
+      "Bytes": 9641,
+      "MiB": 0.009,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Game Solutions\\Clear Mission\\1.mp4",
+      "RelativePath": "Game Solutions\\Clear Mission\\1.mp4",
+      "Bytes": 65156678,
+      "MiB": 62.138,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Game Solutions\\Clear Mission\\2.mp4",
+      "RelativePath": "Game Solutions\\Clear Mission\\2.mp4",
+      "Bytes": 15749365,
+      "MiB": 15.02,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Game Solutions\\Clear Mission\\Icon.png",
+      "RelativePath": "Game Solutions\\Clear Mission\\Icon.png",
+      "Bytes": 21004,
+      "MiB": 0.02,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Git.jpg",
+      "RelativePath": "Git.jpg",
+      "Bytes": 11702,
+      "MiB": 0.011,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\GitHub\\VooArch\\1.mp4",
+      "RelativePath": "GitHub\\VooArch\\1.mp4",
+      "Bytes": 3402398,
+      "MiB": 3.245,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\index.html",
+      "RelativePath": "index.html",
+      "Bytes": 623,
+      "MiB": 0.001,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Meta.jpeg",
+      "RelativePath": "Meta.jpeg",
+      "Bytes": 7536,
+      "MiB": 0.007,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\Decay (GameJam)\\1.png",
+      "RelativePath": "My\\Decay (GameJam)\\1.png",
+      "Bytes": 445707,
+      "MiB": 0.425,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\Decay (GameJam)\\2.png",
+      "RelativePath": "My\\Decay (GameJam)\\2.png",
+      "Bytes": 351904,
+      "MiB": 0.336,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\Decay (GameJam)\\3.png",
+      "RelativePath": "My\\Decay (GameJam)\\3.png",
+      "Bytes": 428986,
+      "MiB": 0.409,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\Decay (GameJam)\\desktop.ini",
+      "RelativePath": "My\\Decay (GameJam)\\desktop.ini",
+      "Bytes": 98,
+      "MiB": 0.0,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\Icon.png",
+      "RelativePath": "My\\Icon.png",
+      "Bytes": 77613,
+      "MiB": 0.074,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\YG\\1.mp4",
+      "RelativePath": "My\\YG\\1.mp4",
+      "Bytes": 27666908,
+      "MiB": 26.385,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\YG\\2.mp4",
+      "RelativePath": "My\\YG\\2.mp4",
+      "Bytes": 1700863,
+      "MiB": 1.622,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\My\\YG\\3.mp4",
+      "RelativePath": "My\\YG\\3.mp4",
+      "Bytes": 6360090,
+      "MiB": 6.065,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\1.jpg",
+      "Bytes": 87555,
+      "MiB": 0.083,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\1.mp4",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\1.mp4",
+      "Bytes": 27082025,
+      "MiB": 25.827,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\10.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\10.jpg",
+      "Bytes": 160276,
+      "MiB": 0.153,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\11.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\11.jpg",
+      "Bytes": 43953,
+      "MiB": 0.042,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\2.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\2.jpg",
+      "Bytes": 42077,
+      "MiB": 0.04,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\2.mp4",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\2.mp4",
+      "Bytes": 17865777,
+      "MiB": 17.038,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\3.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\3.jpg",
+      "Bytes": 41749,
+      "MiB": 0.04,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\3.mp4",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\3.mp4",
+      "Bytes": 8674361,
+      "MiB": 8.273,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\4.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\4.jpg",
+      "Bytes": 38650,
+      "MiB": 0.037,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\4.mp4",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\4.mp4",
+      "Bytes": 12346053,
+      "MiB": 11.774,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\5.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\5.jpg",
+      "Bytes": 38977,
+      "MiB": 0.037,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\6.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\6.jpg",
+      "Bytes": 82555,
+      "MiB": 0.079,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\7.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\7.jpg",
+      "Bytes": 222553,
+      "MiB": 0.212,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\8.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\8.jpg",
+      "Bytes": 83528,
+      "MiB": 0.08,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\9.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\9.jpg",
+      "Bytes": 86781,
+      "MiB": 0.083,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Draw to smash\\Icon.jpg",
+      "Bytes": 80525,
+      "MiB": 0.077,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\1.jpg",
+      "Bytes": 97218,
+      "MiB": 0.093,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\1.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\1.mp4",
+      "Bytes": 22208538,
+      "MiB": 21.18,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\2.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\2.jpg",
+      "Bytes": 96072,
+      "MiB": 0.092,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\2.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\2.mp4",
+      "Bytes": 34985174,
+      "MiB": 33.364,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\3.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\3.jpg",
+      "Bytes": 93548,
+      "MiB": 0.089,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\3.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\3.mp4",
+      "Bytes": 6253708,
+      "MiB": 5.964,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\4.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\4.jpg",
+      "Bytes": 91904,
+      "MiB": 0.088,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\4.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\4.mp4",
+      "Bytes": 8403252,
+      "MiB": 8.014,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\5.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\5.jpg",
+      "Bytes": 94486,
+      "MiB": 0.09,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\5.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\5.mp4",
+      "Bytes": 7721295,
+      "MiB": 7.364,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\6.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\6.jpg",
+      "Bytes": 124575,
+      "MiB": 0.119,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\7.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\7.jpg",
+      "Bytes": 116975,
+      "MiB": 0.112,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Cafe\\Icon.jpg",
+      "Bytes": 58624,
+      "MiB": 0.056,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\1.jpg",
+      "Bytes": 47678,
+      "MiB": 0.045,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\1.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\1.mp4",
+      "Bytes": 14998602,
+      "MiB": 14.304,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\2.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\2.jpg",
+      "Bytes": 46389,
+      "MiB": 0.044,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\2.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\2.mp4",
+      "Bytes": 21169096,
+      "MiB": 20.188,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\3.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\3.jpg",
+      "Bytes": 45516,
+      "MiB": 0.043,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\3.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\3.mp4",
+      "Bytes": 8105064,
+      "MiB": 7.73,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\4.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\4.jpg",
+      "Bytes": 54629,
+      "MiB": 0.052,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\4.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\4.mp4",
+      "Bytes": 20061134,
+      "MiB": 19.132,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\5.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\5.jpg",
+      "Bytes": 55607,
+      "MiB": 0.053,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\5.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\5.mp4",
+      "Bytes": 11564698,
+      "MiB": 11.029,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\6.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\6.mp4",
+      "Bytes": 10126827,
+      "MiB": 9.658,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Clicker\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Clicker\\Icon.jpg",
+      "Bytes": 10946,
+      "MiB": 0.01,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hex planet\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hex planet\\1.jpg",
+      "Bytes": 24568,
+      "MiB": 0.023,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hex planet\\1.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hex planet\\1.mp4",
+      "Bytes": 17057182,
+      "MiB": 16.267,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hex planet\\2.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hex planet\\2.mp4",
+      "Bytes": 16114815,
+      "MiB": 15.368,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hex planet\\3.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hex planet\\3.mp4",
+      "Bytes": 27486092,
+      "MiB": 26.213,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hex planet\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hex planet\\Icon.jpg",
+      "Bytes": 26492,
+      "MiB": 0.025,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\1.jpg",
+      "Bytes": 29587,
+      "MiB": 0.028,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\1.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\1.mp4",
+      "Bytes": 12731584,
+      "MiB": 12.142,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\2.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\2.jpg",
+      "Bytes": 40232,
+      "MiB": 0.038,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\2.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\2.mp4",
+      "Bytes": 12223327,
+      "MiB": 11.657,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\3.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\3.jpg",
+      "Bytes": 32439,
+      "MiB": 0.031,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\3.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\3.mp4",
+      "Bytes": 28882287,
+      "MiB": 27.544,
+      "FitsStaticAssets": false
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\4.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\4.jpg",
+      "Bytes": 30291,
+      "MiB": 0.029,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\4.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\4.mp4",
+      "Bytes": 8653921,
+      "MiB": 8.253,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\5.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\5.jpg",
+      "Bytes": 30208,
+      "MiB": 0.029,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\5.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\5.mp4",
+      "Bytes": 20568396,
+      "MiB": 19.616,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\6.mp4",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\6.mp4",
+      "Bytes": 22485153,
+      "MiB": 21.444,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Hide\\Icon.jpg",
+      "Bytes": 31115,
+      "MiB": 0.03,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Wheres my water\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Wheres my water\\1.jpg",
+      "Bytes": 32765,
+      "MiB": 0.031,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Wheres my water\\1.mov",
+      "RelativePath": "Pimpochka Games\\Simba Wheres my water\\1.mov",
+      "Bytes": 18978906,
+      "MiB": 18.1,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Wheres my water\\2.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Wheres my water\\2.jpg",
+      "Bytes": 33372,
+      "MiB": 0.032,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Wheres my water\\3.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Wheres my water\\3.jpg",
+      "Bytes": 26728,
+      "MiB": 0.025,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Wheres my water\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Simba Wheres my water\\Icon.jpg",
+      "Bytes": 19594,
+      "MiB": 0.019,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Wheres my water\\Icon.png",
+      "RelativePath": "Pimpochka Games\\Simba Wheres my water\\Icon.png",
+      "Bytes": 71954,
+      "MiB": 0.069,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\1.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\1.jpg",
+      "Bytes": 41446,
+      "MiB": 0.04,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\1.mp4",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\1.mp4",
+      "Bytes": 15499677,
+      "MiB": 14.782,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\2.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\2.jpg",
+      "Bytes": 22639,
+      "MiB": 0.022,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\2.mp4",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\2.mp4",
+      "Bytes": 24257700,
+      "MiB": 23.134,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\3.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\3.jpg",
+      "Bytes": 46673,
+      "MiB": 0.045,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\3.mp4",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\3.mp4",
+      "Bytes": 14135044,
+      "MiB": 13.48,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\4.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\4.jpg",
+      "Bytes": 27445,
+      "MiB": 0.026,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\4.mp4",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\4.mp4",
+      "Bytes": 21223832,
+      "MiB": 20.241,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\5.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\5.jpg",
+      "Bytes": 34077,
+      "MiB": 0.032,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\6.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\6.jpg",
+      "Bytes": 27184,
+      "MiB": 0.026,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka Games\\Watermelon Cats\\Icon.jpg",
+      "RelativePath": "Pimpochka Games\\Watermelon Cats\\Icon.jpg",
+      "Bytes": 27485,
+      "MiB": 0.026,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Pimpochka.png",
+      "RelativePath": "Pimpochka.png",
+      "Bytes": 9727,
+      "MiB": 0.009,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Q-AR.jpg",
+      "RelativePath": "Q-AR.jpg",
+      "Bytes": 7135,
+      "MiB": 0.007,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Q-AR\\Office Life\\2024-11-17 17-03-59.mp4",
+      "RelativePath": "Q-AR\\Office Life\\2024-11-17 17-03-59.mp4",
+      "Bytes": 7226111,
+      "MiB": 6.891,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Q-AR\\Office Life\\Icon.png",
+      "RelativePath": "Q-AR\\Office Life\\Icon.png",
+      "Bytes": 119925,
+      "MiB": 0.114,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\1.jpg",
+      "RelativePath": "Vizard Team\\ARTeamService\\1.jpg",
+      "Bytes": 70284,
+      "MiB": 0.067,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\1.mp4",
+      "RelativePath": "Vizard Team\\ARTeamService\\1.mp4",
+      "Bytes": 7089094,
+      "MiB": 6.761,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\2.jpg",
+      "RelativePath": "Vizard Team\\ARTeamService\\2.jpg",
+      "Bytes": 73648,
+      "MiB": 0.07,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\2.mp4",
+      "RelativePath": "Vizard Team\\ARTeamService\\2.mp4",
+      "Bytes": 9181620,
+      "MiB": 8.756,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\3_no.mp4",
+      "RelativePath": "Vizard Team\\ARTeamService\\3_no.mp4",
+      "Bytes": 10010485,
+      "MiB": 9.547,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\3.jpg",
+      "RelativePath": "Vizard Team\\ARTeamService\\3.jpg",
+      "Bytes": 60603,
+      "MiB": 0.058,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\4.jpg",
+      "RelativePath": "Vizard Team\\ARTeamService\\4.jpg",
+      "Bytes": 71336,
+      "MiB": 0.068,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\5.jpg",
+      "RelativePath": "Vizard Team\\ARTeamService\\5.jpg",
+      "Bytes": 67053,
+      "MiB": 0.064,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\ARTeamService\\Icon.png",
+      "RelativePath": "Vizard Team\\ARTeamService\\Icon.png",
+      "Bytes": 28149,
+      "MiB": 0.027,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\1.jpg",
+      "RelativePath": "Vizard Team\\Saint\\1.jpg",
+      "Bytes": 53040,
+      "MiB": 0.051,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\1.MP4",
+      "RelativePath": "Vizard Team\\Saint\\1.MP4",
+      "Bytes": 8219153,
+      "MiB": 7.838,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\2.jpg",
+      "RelativePath": "Vizard Team\\Saint\\2.jpg",
+      "Bytes": 83028,
+      "MiB": 0.079,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\2.MP4",
+      "RelativePath": "Vizard Team\\Saint\\2.MP4",
+      "Bytes": 4712151,
+      "MiB": 4.494,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\3.MP4",
+      "RelativePath": "Vizard Team\\Saint\\3.MP4",
+      "Bytes": 16470477,
+      "MiB": 15.707,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\4.MOV",
+      "RelativePath": "Vizard Team\\Saint\\4.MOV",
+      "Bytes": 21465003,
+      "MiB": 20.471,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\Content.json",
+      "RelativePath": "Vizard Team\\Saint\\Content.json",
+      "Bytes": 25835,
+      "MiB": 0.025,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard Team\\Saint\\Icon.jpg",
+      "RelativePath": "Vizard Team\\Saint\\Icon.jpg",
+      "Bytes": 21718,
+      "MiB": 0.021,
+      "FitsStaticAssets": true
+    },
+    {
+      "Path": "F:\\Some junk\\Content\\Vizard.jpg",
+      "RelativePath": "Vizard.jpg",
+      "Bytes": 37851,
+      "MiB": 0.036,
+      "FitsStaticAssets": true
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+[
+  {
+    "StartDate": "2023-07",
+    "EndDate": "2024-12",
+    "FullDescription": "Студия разработки игр в рамках своей вселенной. Мной тут было реализовано множество технически интересных проектов и инструментария для Гейм и Левел дизайнеров. Благодаря грамотному подходу к построению архитектуры проекты имеют неограниченную возможность к расширению и добавлению нового контента.\n\nОбязанности:\n- Разработка архитектуры 2d и 3d игр для Android и iOS\n- Интеграция облачных сервисов в уже существующие проекты\n- Прототипирование, имплементация механик\n- Менторство начинающих unity разработчиков\n- Оптимизация существующих проектов (Jobs, сжатие, GCAlloc)\n\nДостижения:\n- Разработал шаблон модульной архитектуры, которая позволила значительно ускорить разработку новых фич и итераций существующих проектов.\n- Внедрил систему зависимостей для управления внешними библиотеками и упрощения интеграции новых инструментов. Благодаря этому, время разработки новых проектов сократилось на 30%, а масштабируемость проектов была значительно повышена.\n- Разработал инструментарий для геймдизайнеров и несколько рабочих пакетов - прогрессивная система сохранений с выгрузкой в облако, система рейтинга и система загрузки контента извне, что помолго значительно ускорить наполнение игр контентом.\n- В короткий срок значительно поднял грейд нескольких начинающих разработчиков. Организовал онбординг для новых разработчиков.\n- Наладил пайплайн работы с git",
+    "CompanyUrl": "https://pimpochka.games/about",
+    "JobType": "Полная занятость",
+    "Name": "Pimpochka Games",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/Pimpochka.png",
+    "Description": "Студия разработки игр и даже больше - своя вселенная с играми, мультиками и огромным сообществом.",
+    "Projects": [
+      {
+        "Name": "Simba Cafe",
+        "Platform": [
+          "Pimpochka Games",
+          "Android",
+          "WebGL"
+        ],
+        "Description": "Мой первый проект в этой компании. Передо мной стояла задача с нуля воссоздать старую версию этого проекта, над которой трудилось множество разработчиков (последовательно). В итоге с нуля была написана архитектура с сохранением необходимого функционала. Также для геймдизайнеров был создан инструмент для создания уровней.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/2.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/3.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/4.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/5.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/3.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/4.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/5.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/6.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Cafe/7.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.CatCafe&hl=ru"
+      },
+      {
+        "Name": "Watermelon Cats",
+        "Platform": [
+          "Pimpochka Games",
+          "Android",
+          "WebGL"
+        ],
+        "Description": "Реализация мёрж шариков от симбы. Все началось с классического режима, после чего был добавлен режим аркады с генератором уровней, боссами каждые 5 уровней, возможностью набирать комбо и рейтингом среди пользователей.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/2.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/3.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/4.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/3.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/4.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/5.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Watermelon Cats/6.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.WatermelonCats&hl=ru"
+      },
+      {
+        "Name": "Simba Clicker",
+        "Platform": [
+          "Pimpochka Games",
+          "WebGL",
+          "Android"
+        ],
+        "Description": "Один из ведущих проектов компании. Грамотно заложенная мной архитектура позволила добавлять новые валюты и комнаты геймдизайнером буквально за пару часов.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/2.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/3.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/4.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/5.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/6.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/3.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/4.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Clicker/5.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.SimbaClicker&hl=ru"
+      },
+      {
+        "Name": "Draw to smash",
+        "Platform": [
+          "Pimpochka Games",
+          "WebGL",
+          "Android"
+        ],
+        "Description": "Еще один написаный полностью мной проект. Облачные сохранения, система рейтинга, возможность кастомизировать абсолютно все обьекты окружения и персонажей, генератор уровней.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/2.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/3.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/4.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/3.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/4.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/5.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/6.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/7.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/8.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Draw to smash/9.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.DrawToSmashFruitCats&hl=ru"
+      },
+      {
+        "Name": "Simba Hex Planet",
+        "Platform": [
+          "Pimpochka Games",
+          "WebGL",
+          "Android"
+        ],
+        "Description": "Технический интересный проект с кастомной системой поиска лучшего решения hex-головоломки",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hex planet/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hex planet/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hex planet/2.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hex planet/3.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hex planet/1.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.HexCatPlanet&hl=en_US"
+      },
+      {
+        "Name": "Simba Hide",
+        "Platform": [
+          "Pimpochka Games",
+          "Android"
+        ],
+        "Description": "Геймплейно необычный и один из самых популярных проектов компании. Моя роль в этом проекте - оптимизация, реализация роадмапы и новых локаций.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/2.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/3.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/4.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/5.mp4",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/6.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/3.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/4.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Hide/5.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.SimbaHideAndSeek&hl=en_US"
+      },
+      {
+        "Name": "Simba Wheres my water",
+        "Platform": [
+          "Pimpochka Games",
+          "WebGL",
+          "Android"
+        ],
+        "Description": "Идейный наследник крокодильчика свомпи.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Wheres my water/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Wheres my water/1.mov"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Wheres my water/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Wheres my water/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Pimpochka Games/Simba Wheres my water/3.jpg"
+        ],
+        "ProjectUrl": "https://play.google.com/store/apps/details?id=com.PimpochkaGames.SimbaWheresMyWater&hl=en_US"
+      }
+    ]
+  },
+  {
+    "StartDate": "2022-01",
+    "EndDate": "2023-07",
+    "FullDescription": "Обязанности:\n- Менторство\n- Участие в найме (проведение технических собеседований)\n- Ревью\n- Полишинг и рефакторинг легаси\n- Разработка клиент-серверных приложений\n- Интеграция аналитики в легаси\n\nДостижения:\n- Автоматизировал процесс создания похожих проектов путем создания шаблона, это позволило сократить срок разработки нового проекта с месяца до полутора недель (от создания вью в Figma до выпуска в AppStore).\n- Организовал бесшовный процесс переноса дизайна из Figma в Unity, за счет чего верстка UI в Unity занимала не больше одного рабочего дня и уменьшилось потребление RAM.",
+    "CompanyUrl": null,
+    "JobType": "Полная занятость",
+    "Name": "AppCake",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/AppCake.png",
+    "Description": "Аутсорс компания с очень плотным потоком проектов. Одновременная работа над 3-5 проектами заставляет быть крайне внимательным к качеству.",
+    "Projects": [
+      {
+        "Name": "Manga Reader",
+        "Platform": [
+          "AppCake",
+          "Android",
+          "iOS"
+        ],
+        "Description": "Большой сборник разных произведений с довольно удобной читалкой и возможностью сохранить контент локально для чтения оффлайн.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/12.png",
+        "VideoUrls": [],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/3.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/4.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/5.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/6.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/7.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/8.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/9.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/10.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/11.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Manga Reader/12.png"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Mods For Minecraft",
+        "Platform": [
+          "AppCake",
+          "IOS",
+          "Android"
+        ],
+        "Description": "Тематические моды, текстуры и карты для майнкрафта.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/7.png",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/1.mov",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/2.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/3.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/4.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/5.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/6.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/7.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/8.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/9.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/10.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/11.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/12.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/13.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Minecraft/14.png"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Big Template",
+        "Platform": [
+          "AppCake",
+          "iOS",
+          "Android"
+        ],
+        "Description": "Глобальный проект-фреймворк для упрощения создания похожих проектов. Включает в себя легко подключаемые реализации всех механик которые когда-либо использовались в подобных проектах.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Big Template/Quiz Finish.png",
+        "VideoUrls": [],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/3.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/4.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/5.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/6.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/7.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/8.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/9.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/10.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/11.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/12.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/13.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/14.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/15.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/16.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/17.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Big Template/18.png"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Desk Builder",
+        "Platform": [
+          "AppCake",
+          "Android",
+          "iOS"
+        ],
+        "Description": "Вспомогательное приложение для создания колод в Clash Royale.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/4.png",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/1.mov"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/3.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/4.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/5.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/6.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/7.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/8.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/9.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/10.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/11.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Desk Builder/12.png"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Mods For Stumble Guys",
+        "Platform": [
+          "AppCake",
+          "Android",
+          "iOS"
+        ],
+        "Description": "Распространение карт и модификаций для Stumble Guys",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/7.png",
+        "VideoUrls": [],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/3.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/4.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/5.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/6.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Mods For Stumble Guys/7.png"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Qwizes",
+        "Platform": [
+          "AppCake",
+          "Android",
+          "iOS"
+        ],
+        "Description": "Различные викторины",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Qwizes/1.png",
+        "VideoUrls": [],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Qwizes/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Qwizes/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Qwizes/3.png"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Skin Maker",
+        "Platform": [
+          "AppCake",
+          "Android",
+          "iOS"
+        ],
+        "Description": "Редактор для скинов майнкрафта с возможностью моментального экспорта в игру.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/AppCake/Skin Maker/2.png",
+        "VideoUrls": [],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/AppCake/Skin Maker/1.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Skin Maker/2.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Skin Maker/3.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Skin Maker/4.png",
+          "https://www.voodyadev.online/Data/Content/AppCake/Skin Maker/5.png"
+        ],
+        "ProjectUrl": null
+      }
+    ]
+  },
+  {
+    "StartDate": "2020-01",
+    "EndDate": "2021-12",
+    "FullDescription": "Обязанности:\n- Разработка AR/MR/VR\n- Разработка мультиплеерной архитектуры (Photon RPC)\n- Организация и поддержка клиент-серверной логики всех проектов компании\n- Интеграция нейросетей для отслеживания жестов и позиционирования в Unity\n\nДостижения:\n- Реализация системы хранения ресурсов для проектов на собственном сервере и быстрое их перемещение на сервер компании-заказчика\n- Реализация механики карты аналогичной Pokemon Go для носимых устройств (Oculus quest 2, Hololens 2)",
+    "CompanyUrl": null,
+    "JobType": "Полная занятость",
+    "Name": "Vizard Team",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/Vizard.jpg",
+    "Description": "Разработка VR/AR решений для бизнеса и промышленности. Множество технологий обогнавших свое время.",
+    "Projects": [
+      {
+        "Name": "ARTeamService",
+        "Platform": [
+          "Vizard Team",
+          "VR",
+          "Android",
+          "iOS"
+        ],
+        "Description": "Кроссплатформенное виртуальное пространство для координации работы выездных сотрудников и начальства в офисе.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/Icon.png",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/2.mp4"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/2.jpg",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/3.jpg",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/4.jpg",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/ARTeamService/5.jpg"
+        ],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Saint AR",
+        "Platform": [
+          "Vizard Team",
+          "Android",
+          "iOS"
+        ],
+        "Description": "На пике популярности NFT токенов было создано приложение для токенизации координат, в которых художники могли делиться своими 3д работами.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/Icon.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/1.MP4",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/2.MP4",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/3.MP4",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/4.MOV"
+        ],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/1.jpg",
+          "https://www.voodyadev.online/Data/Content/Vizard Team/Saint/2.jpg"
+        ],
+        "ProjectUrl": null
+      }
+    ]
+  },
+  {
+    "StartDate": "",
+    "EndDate": "Present",
+    "FullDescription": "Описание GitHub / Pet Projects",
+    "CompanyUrl": "",
+    "JobType": "Контракт",
+    "Name": "Pet-Projects",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/Git.jpg",
+    "Description": "Мои Open Source наработки и пет-проекты.",
+    "Projects": [
+      {
+        "Name": "Modular Arch",
+        "Platform": [
+          "Pet-Projects",
+          "Crossplatform"
+        ],
+        "Description": "Пример архитектуры с упором на расширяемость.",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Git.jpg",
+        "VideoUrls": [],
+        "ScreenUrls": [],
+        "ProjectUrl": "https://github.com/voodya/Test-Task-2024-Nekki-VContainer"
+      },
+      {
+        "Name": "Decay (GameJam)",
+        "Platform": [
+          "Pet-Projects",
+          "WebGL"
+        ],
+        "Description": "История одного разложившегося человека. Создано за 48 часов. Страница на itch: https://bobi5051.itch.io/quest-for-decayed-soul\nПо кнопке ниже можно поиграть в браузере",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/My/Decay (GameJam)/3.png",
+        "VideoUrls": [],
+        "ScreenUrls": [
+          "https://www.voodyadev.online/Data/Content/My/Decay (GameJam)/3.png",
+          "https://www.voodyadev.online/Data/Content/My/Decay (GameJam)/2.png",
+          "https://www.voodyadev.online/Data/Content/My/Decay (GameJam)/1.png"
+        ],
+        "ProjectUrl": "https://voodyadev.online/Builds/Decay/"
+      },
+      {
+        "Name": "VooArch frimework",
+        "Platform": [
+          "Pet-Projects",
+          "Crossplatform"
+        ],
+        "Description": "Закрытый фреймворк основанный на VContainer, UniRx, UniTask для организации архитектуры игровых проектов и модульной имплементации функционала. Основной особенностью фреймворка является распределение рантайм сервисов по контейнерам и визуальное представление необходимых конфигураций. ",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Git.jpg",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/GitHub/VooArch/1.mp4"
+        ],
+        "ScreenUrls": [],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Yandex Games",
+        "Platform": [
+          "Pet-Projects",
+          "WebGL"
+        ],
+        "Description": "Эксперименты с небольшими Web играми под псевдонимом Ostrich Games.\n1 - Своеобразный Maze Runner.\n2 - Невероятно сложный платформер с пиксель хантингом и замедлением времени.\n3 - Японские головоломки.\n\nК сожалению, эти проекты проиграли конкуренцию треш играм, поэтому они были удалены с площадки",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/My/Icon.png",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/My/YG/1.mp4",
+          "https://www.voodyadev.online/Data/Content/My/YG/2.mp4",
+          "https://www.voodyadev.online/Data/Content/My/YG/3.mp4"
+        ],
+        "ScreenUrls": [],
+        "ProjectUrl": null
+      }
+    ]
+  },
+  {
+    "StartDate": "2025-04",
+    "EndDate": "2025-10",
+    "FullDescription": "Обязанности:\n- разработка и реализация архитектуры клиент-серверного WebGL приложения\n- участие в найме Unity разработчиков\n- участие в построении Roadmap направления GameFi Holiverse\n- тесная работа с GoLang Backend разработчиками и DevOps для реализации WEB3 функционала\n\nДостижения:\n- от идеи до полностью рабочего прототипа за 4 месяца (включая документацию, онбординги новых разработчиков, подключение к инфрастуктуре компании и набор из 4х мини-игр)\n- реализация доставки мини-игр через Addressables не расширяя кодовую базу проекта (конструктор мини-игр)",
+    "CompanyUrl": "https://holiverse.ai/",
+    "JobType": "Контракт",
+    "Name": "Meta Whale (GameFi Holiverse)",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/Meta.jpeg",
+    "Description": "Контракт на реализацию архитектуры проекта который призван объединить все продукты компании в одну игровую метавселенную.",
+    "Projects": [
+      {
+        "Name": "Game Hub",
+        "Platform": [
+          "Meta Whale (GameFi Holiverse)"
+        ],
+        "Description": "Web хаб для миниигр. Интеграция с WEB3 - авторизация по кошельку, доставка контента бандлами",
+        "ImageUrl": "",
+        "VideoUrls": [],
+        "ScreenUrls": [],
+        "ProjectUrl": "https://meta-whale.com/news-portal/ru/post/487"
+      }
+    ]
+  },
+  {
+    "StartDate": "2019-10",
+    "EndDate": "2020-01",
+    "FullDescription": "Обязанности:\n- обновление старых проектов по тз\n- реализация AR функционала используя фреймворк Vuforia\n- паблишинг приложений в AppStore и GooglePlay\n\nДостижения:\n- было сложно, но я не пошел работать в доставку еды :)",
+    "CompanyUrl": null,
+    "JobType": "Контракт",
+    "Name": "Q-AR",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/Q-AR.jpg",
+    "Description": "Стажировка в Q-AR это первый опыт AR разработки, первые набитые шишки и первые шаги к карьере Unity разработчика.",
+    "Projects": [
+      {
+        "Name": "Office-Life",
+        "Platform": [
+          "Q-AR"
+        ],
+        "Description": "",
+        "ImageUrl": "",
+        "VideoUrls": [],
+        "ScreenUrls": [],
+        "ProjectUrl": null
+      }
+    ]
+  },
+  {
+    "StartDate": "2025-01",
+    "EndDate": "2025-04",
+    "FullDescription": "Контракт был подписан на реализацию игры \"Чистая миссия\" под ключ.\nЗа несколько месяцев мной была разработана и реализованная архитектура WebGL проекта на Unity.\nГлавной задачей было обеспечение высокой скорости загрузки игры и работы на слабых устройствах, наличие возможности обновлять внутриигровые задания/данные игрока с админки и идентифицировать пользователя для участия в розыгрышах.\n\nВ итоге за счет грамотного проектирования удалось безболезненно разделить реализацию кор-механики между несколькими разработчиками и закончить проект за неделю до дедлайна, оставив команде время на отдых перед следующим проектом.",
+    "CompanyUrl": null,
+    "JobType": "Контракт",
+    "Name": "Game Solutions",
+    "LogoUrl": "https://www.voodyadev.online/Data/Content/Default.png",
+    "Description": "Контракт архитектора/главного разработчика на проекте \"Чистая миссия\" для сервиса Вконтакте \"Другое Дело\".",
+    "Projects": [
+      {
+        "Name": "Чистая Миссия",
+        "Platform": [
+          "Game Solutions",
+          "WebGL"
+        ],
+        "Description": "Сервис развивающих заданий «Другое Дело» президентской платформы «Россия – страна возможностей» запустил «Чистую миссию» – экологическую игру-головоломку, где пользователь управляет мусороперерабатывающим заводом и очищает виртуальный город от отходов, создавая экологически полезные предметы. Источник: \"https://rsv.ru/news/1/7896/\"",
+        "ImageUrl": "https://www.voodyadev.online/Data/Content/Game Solutions/Clear Mission/Icon.png",
+        "VideoUrls": [
+          "https://www.voodyadev.online/Data/Content/Game Solutions/Clear Mission/1.mp4",
+          "https://www.voodyadev.online/Data/Content/Game Solutions/Clear Mission/2.mp4"
+        ],
+        "ScreenUrls": [],
+        "ProjectUrl": "https://vk.cc/cKHO60"
+      }
+    ]
+  },
+  {
+    "StartDate": "",
+    "EndDate": "Present",
+    "FullDescription": "Описание Freelans",
+    "CompanyUrl": null,
+    "JobType": "Фриланс",
+    "Name": "Freelans",
+    "LogoUrl": "",
+    "Description": "",
+    "Projects": [
+      {
+        "Name": "Мафия",
+        "Platform": [
+          "Freelans"
+        ],
+        "Description": "",
+        "ImageUrl": "",
+        "VideoUrls": [],
+        "ScreenUrls": [],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Игра в слова",
+        "Platform": [
+          "Freelans"
+        ],
+        "Description": "",
+        "ImageUrl": "",
+        "VideoUrls": [],
+        "ScreenUrls": [],
+        "ProjectUrl": null
+      },
+      {
+        "Name": "Защитники",
+        "Platform": [
+          "Freelans"
+        ],
+        "Description": "",
+        "ImageUrl": "",
+        "VideoUrls": [],
+        "ScreenUrls": [],
+        "ProjectUrl": null
+      }
+    ]
+  }
+]

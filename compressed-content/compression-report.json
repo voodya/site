@@ -1,0 +1,58 @@
+[
+  {
+    "source": "F:\\Some junk\\Content\\AppCake\\Mods For Minecraft\\2.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\AppCake\\Mods For Minecraft\\2.mp4",
+    "original_bytes": 75520908,
+    "compressed_bytes": 22739580,
+    "duration_seconds": 65.3,
+    "decode_verified": true
+  },
+  {
+    "source": "F:\\Some junk\\Content\\Game Solutions\\Clear Mission\\1.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\Game Solutions\\Clear Mission\\1.mp4",
+    "original_bytes": 65156678,
+    "compressed_bytes": 23323914,
+    "duration_seconds": 60.97,
+    "decode_verified": true
+  },
+  {
+    "source": "F:\\Some junk\\Content\\My\\YG\\1.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\My\\YG\\1.mp4",
+    "original_bytes": 27666908,
+    "compressed_bytes": 23532796,
+    "duration_seconds": 16.27,
+    "decode_verified": true
+  },
+  {
+    "source": "F:\\Some junk\\Content\\Pimpochka Games\\Draw to smash\\1.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\Pimpochka Games\\Draw to smash\\1.mp4",
+    "original_bytes": 27082025,
+    "compressed_bytes": 23846626,
+    "duration_seconds": 88.47,
+    "decode_verified": true
+  },
+  {
+    "source": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Cafe\\2.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\Pimpochka Games\\Simba Cafe\\2.mp4",
+    "original_bytes": 34985174,
+    "compressed_bytes": 22480307,
+    "duration_seconds": 112.57,
+    "decode_verified": true
+  },
+  {
+    "source": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hex planet\\3.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\Pimpochka Games\\Simba Hex planet\\3.mp4",
+    "original_bytes": 27486092,
+    "compressed_bytes": 22850427,
+    "duration_seconds": 95.63,
+    "decode_verified": true
+  },
+  {
+    "source": "F:\\Some junk\\Content\\Pimpochka Games\\Simba Hide\\3.mp4",
+    "output": "F:\\Repos\\site\\compressed-content\\Pimpochka Games\\Simba Hide\\3.mp4",
+    "original_bytes": 28882287,
+    "compressed_bytes": 22692866,
+    "duration_seconds": 93.07,
+    "decode_verified": true
+  }
+]
