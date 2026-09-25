@@ -82,13 +82,13 @@ const RoadmapView = ({ data, onViewProjects }) => {
         {
             name: "I know this place..?",
             role: "Помощь с паблишингом",
-            logoUrl: "https://www.voodyadev.online/Data/Content/1.jpg", // Замените на реальное лого
+            logoUrl: "/Data/Content/1.jpg",
             url: "https://store.steampowered.com/app/2707160/YA_znayu_eto_mesto_glava_II/" // Замените на реальную ссылку
         },
         {
             name: "Announcement coming soon...",
             role: "Один из основателей. Разработчик.",
-            logoUrl: "https://www.voodyadev.online/Data/Content/2.jpg", // Замените на реальное лого
+            logoUrl: "/Data/Content/Default.png",
             url: "https://www.voodyadev.online/Promo" // Замените на реальную ссылку
         }
         // Можно добавить больше партнеров сюда
@@ -104,7 +104,7 @@ const RoadmapView = ({ data, onViewProjects }) => {
                 <div className="w-48 flex-shrink-0 mx-auto md:mx-0">
                     <div className="w-48 h-48 mb-4">
                         <img
-                            src="https://www.voodyadev.online/Data/Content/Ava.jpg" // ЗАМЕНИ ЭТУ ССЫЛКУ НА СВОЕ ФОТО
+                            src="/Data/Content/Ava.jpg"
                             alt="Profile"
                             className="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-slate-700"
                         />
