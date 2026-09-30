@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { createPortal } from 'react-dom';
-import { Map, Briefcase, Mail, X, ExternalLink, Send, Linkedin, Github, Globe, Calendar, Laptop, Handshake } from 'lucide-react';
+import GameHero, { GameBackdrop, DesignSelector } from './GameDesign.jsx';
+import InventoryDialog from './InventoryDialog.jsx';
+import CareerCard from './CareerCard.jsx';
+import { Map, Briefcase, Mail, ExternalLink, Send, Linkedin, Github, Globe, Calendar, Gamepad2, Play, LoaderCircle, ArrowUpRight, Handshake } from 'lucide-react';
 
 const SOCIAL_LINKS = {
     telegram: 'https://t.me/rigitbidy',
@@ -60,21 +62,21 @@ const getNoun = (number, one, two, five) => {
 const TabButton = ({ active, onClick, icon: Icon, label }) => (
     <button
         onClick={onClick}
+        aria-pressed={active}
         // ОБНОВЛЕНИЕ: Уменьшены отступы на мобильных (px-4 py-2) и увеличены на десктопе (md:px-6 md:py-3)
-        className={`flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full transition-all duration-300 font-medium text-sm md:text-base ${active
+        className={`nav-tab flex items-center gap-2 px-4 py-2 md:px-6 md:py-3 rounded-full transition-all duration-300 font-medium text-sm md:text-base ${active
             ? 'bg-blue-600 text-white shadow-lg shadow-blue-500/30'
             : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white'
             }`}
     >
-        <Icon size={18} />
+        {React.createElement(Icon, { size: 18 })}
         <span>{label}</span>
     </button>
 );
 
-const RoadmapView = ({ data, onViewProjects }) => {
-    // Разделяем данные на "Таймлайн" (с датами) и "Прочее" (без дат)
-    const timelineData = useMemo(() => data.filter(item => item.StartDate), [data]);
-    const otherData = useMemo(() => data.filter(item => !item.StartDate), [data]);
+const RoadmapView = ({ data, onViewProjects, onPortfolio, onContact }) => {
+    // The route follows career progression; portfolio sorting stays unchanged.
+    const timelineData = useMemo(() => data.filter(item => item.StartDate).sort((a, b) => new Date(b.StartDate) - new Date(a.StartDate)), [data]);
     const [selectedCompany, setSelectedCompany] = useState(null);
 
     // ДАННЫЕ О ПАРТНЕРАХ (Можно вынести в JSON, но пока здесь)
@@ -96,148 +98,27 @@ const RoadmapView = ({ data, onViewProjects }) => {
 
     return (
         <div className="animate-fade-in space-y-16">
-            {/* HERO SECTION */}
-            <div className="flex flex-col md:flex-row items-start gap-8 bg-slate-800/50 p-8 rounded-3xl border border-slate-700 relative overflow-hidden">
-                {/* Декоративный фон (опционально) */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-
-                <div className="w-48 flex-shrink-0 mx-auto md:mx-0">
-                    <div className="w-48 h-48 mb-4">
-                        <img
-                            src="/Data/Content/Ava.jpg"
-                            alt="Profile"
-                            className="w-full h-full object-cover rounded-2xl shadow-2xl border-4 border-slate-700"
-                        />
-                    </div>
-
-                    {/* СОЦСЕТИ ПОД ФОТО */}
-                    <div className="flex justify-center gap-4 text-slate-400">
-                        <a href={SOCIAL_LINKS.telegram} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="Telegram">
-                            <Send size={20} />
-                        </a>
-                        <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="LinkedIn">
-                            <Linkedin size={20} />
-                        </a>
-                        <a href={SOCIAL_LINKS.headhunter} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="HeadHunter">
-                            <Briefcase size={20} />
-                        </a>
-                        <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors" title="GitHub">
-                            <Github size={20} />
-                        </a>
-                    </div>
-                </div>
-
-                <div className="text-center md:text-left space-y-6 flex-1">
-                    <div className="space-y-4">
-                        <h1 className="text-4xl md:text-5xl font-bold text-white">
-                            Senior Unity Разработчик
-                        </h1>
-                        <p className="text-xl text-blue-400 font-semibold">
-                            Опыт работы: 6 лет 6 месяцев
-                        </p>
-                        <p className="text-slate-300 max-w-2xl leading-relaxed mx-auto md:mx-0">
-                            Специализируюсь на создании архитектуры игровых проектов, оптимизации и разработке инструментов.
-                            Имею опыт работы с VR/AR, мобильными играми и PC проектами.
-                            Люблю чистый код и сложные задачи.
-                        </p>
-
-                        {/* НАВЫКИ */}
-                        <div className="flex flex-wrap justify-center md:justify-start gap-2 pt-2">
-                            {["Unity", "C#", "VContainer", "UniRx", "UniTask", "Zenject", "VR/AR", "Architecture", "PC", "MVP", "MVVM"].map((skill) => (
-                                <span
-                                    key={skill}
-                                    className="px-3 py-1 bg-blue-600/10 text-blue-400 border border-blue-500/20 rounded-lg text-sm font-medium hover:bg-blue-600/20 transition-colors"
-                                >
-                                    {skill}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+            <GameHero data={data} links={SOCIAL_LINKS} onPortfolio={onPortfolio} onContact={onContact} />
 
             {/* ROADMAP TIMELINE (Опыт работы) */}
             {timelineData.length > 0 && (
                 <div className="space-y-8">
-                    <h2 className="text-3xl font-bold text-white pl-4 border-l-4 border-blue-600">
-                        Опыт работы
-                    </h2>
-                    <div className="relative border-l-2 border-slate-700 ml-4 md:ml-6 space-y-12 pb-4">
+                    <div className="section-heading"><h2>Опыт работы</h2></div>
+                    <ol className="career-route" aria-label="Карьерный путь по порядку">
                         {timelineData.map((job, index) => (
-                            <div
-                                key={index}
-                                className="relative pl-8 md:pl-12 group"
-                            >
-                                {/* Dot */}
-                                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-blue-500 transition-colors duration-300 z-10"></div>
-
-                                <div className="flex flex-col sm:flex-row gap-6 items-start">
-                                    {/* Company Logo */}
-                                    {job.LogoUrl && (
-                                        <div className="w-20 h-20 flex-shrink-0 bg-slate-800 rounded-xl overflow-hidden border border-slate-700 shadow-lg mt-1 transition-colors">
-                                            <img
-                                                src={job.LogoUrl}
-                                                alt={`${job.Name} Logo`}
-                                                className="w-full h-full object-cover"
-                                            />
-                                        </div>
-                                    )}
-
-                                    <div className="space-y-3 flex-grow">
-                                        {/* Header with Name and Date */}
-                                        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                                            <h3 className="text-2xl font-bold text-white transition-colors">
-                                                {job.Name}
-                                            </h3>
-
-                                            {/* Date Display */}
-                                            <div className="flex flex-wrap items-center gap-2 text-sm font-medium">
-                                                <div className="flex items-center gap-2 bg-slate-800/80 px-3 py-1 rounded-full text-blue-300 border border-slate-700">
-                                                    <Calendar size={14} />
-                                                    <span className="capitalize">{formatDate(job.StartDate)}</span>
-                                                    <span>—</span>
-                                                    <span className="capitalize">{formatDate(job.EndDate || 'Present')}</span>
-                                                    <span className="text-slate-500 px-1">•</span>
-                                                    <span className="text-slate-400">{calculateDuration(job.StartDate, job.EndDate || 'Present')}</span>
-                                                </div>
-                                                {job.JobType && (
-                                                    <span className="px-2 py-0.5 bg-blue-500/10 text-blue-400 border border-blue-500/20 rounded text-[10px] font-bold uppercase tracking-wider">
-                                                        {job.JobType}
-                                                    </span>
-                                                )}
-                                            </div>
-                                        </div>
-
-                                        <p className="text-slate-400 bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
-                                            {job.Description}
-                                        </p>
-
-                                        <div className="flex flex-wrap gap-3 mt-4">
-                                            <button
-                                                onClick={() => setSelectedCompany(job)}
-                                                className="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-blue-400 text-sm font-semibold rounded-lg border border-slate-700 hover:border-blue-500/50 transition-all flex items-center gap-2 group/btn"
-                                            >
-                                                <span>Подробнее</span>
-                                                <ExternalLink size={14} className="group-hover/btn:translate-x-0.5 transition-transform" />
-                                            </button>
-
-                                            {job.Projects && job.Projects.length > 0 && (
-                                                <button
-                                                    onClick={() => onViewProjects(job.Name)}
-                                                    className="px-4 py-2 bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 text-sm font-semibold rounded-lg border border-blue-500/20 hover:border-blue-500/50 transition-all flex items-center gap-2 group/btn"
-                                                >
-                                                    <span>Просмотреть проекты</span>
-                                                    <Briefcase size={14} className="group-hover/btn:scale-110 transition-transform" />
-                                                </button>
-                                            )}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <CareerCard
+                                key={`${job.Name}-${job.StartDate}`}
+                                job={job}
+                                level={timelineData.length - index}
+                                latest={index === 0}
+                                start={formatDate(job.StartDate)}
+                                end={formatDate(job.EndDate || 'Present')}
+                                duration={calculateDuration(job.StartDate, job.EndDate || 'Present')}
+                                onDetails={setSelectedCompany}
+                                onProjects={onViewProjects}
+                            />
                         ))}
-                    </div>
+                    </ol>
                 </div>
             )}
 
@@ -250,7 +131,7 @@ const RoadmapView = ({ data, onViewProjects }) => {
                             <Handshake size={24} className="text-slate-500" />
                         </h2>
                         <p className="text-slate-400 pl-4 max-w-2xl leading-relaxed">
-                            Проекты, в которых я принимал участие на добровольных началах в качестве программиста или технического специалиста геймдев-индустрии.
+                            Разработка и техническая поддержка на добровольных началах.
                         </p>
                     </div>
 
@@ -295,24 +176,18 @@ const RoadmapView = ({ data, onViewProjects }) => {
 };
 
 const ProjectCard = ({ project, onClick }) => {
-    const [imgSrc, setImgSrc] = useState(project.ImageUrl || "");
+    const [failedImage, setFailedImage] = useState(null);
+    const imgSrc = project.ImageUrl && failedImage !== project.ImageUrl ? project.ImageUrl : "/Data/Content/Default.png";
 
-    // ОБНОВЛЕНИЕ: Следим за изменением пропса project.ImageUrl
-    // Если проект меняется (при сортировке), сбрасываем состояние картинки
-    useEffect(() => {
-        setImgSrc(project.ImageUrl || "");
-    }, [project.ImageUrl]);
-
-    const handleError = () => {
-        setImgSrc("https://via.placeholder.com/150/1e293b/FFFFFF?text=No+Icon");
-    };
+    const handleError = () => setFailedImage(project.ImageUrl);
 
     return (
-        <div
+        <button
+            type="button"
             onClick={() => onClick(project)}
-            className="bg-slate-800 rounded-xl overflow-hidden cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 border border-slate-700 flex flex-col h-full group"
+            className="project-card text-left bg-slate-800 rounded-xl overflow-hidden cursor-pointer hover:scale-105 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 border border-slate-700 flex flex-col h-full group"
         >
-            <div className="aspect-square w-full bg-slate-900 relative overflow-hidden">
+            <div className="project-art aspect-square w-full bg-slate-900 relative overflow-hidden">
                 {imgSrc ? (
                     <img
                         src={imgSrc}
@@ -328,7 +203,7 @@ const ProjectCard = ({ project, onClick }) => {
                 {/* Platform Badge Overlay */}
                 <div className="absolute top-2 right-2 flex flex-col items-end gap-1">
                     {project.Platform.slice(1).map((tag, i) => (
-                        <span key={i} className="text-[10px] font-bold uppercase tracking-wider bg-black/70 text-white px-2 py-0.5 rounded backdrop-blur-sm">
+                        <span key={i} className="project-platform-tag text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded">
                             {tag}
                         </span>
                     ))}
@@ -340,47 +215,28 @@ const ProjectCard = ({ project, onClick }) => {
                     <p className="text-slate-400 text-sm line-clamp-2">{project.Description}</p>
                 </div>
             </div>
-        </div>
+        </button>
     );
 };
 
 const ProjectModal = ({ project, onClose }) => {
     if (!project) return null;
 
-    // Используем Portal для рендеринга модального окна в body
-    return createPortal(
-        <div
-            className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-900/90 backdrop-blur-sm p-4 animate-fade-in"
-            onClick={onClose}
-        >
-            <div
-                className="bg-slate-900 w-full max-w-5xl max-h-[90vh] rounded-2xl border border-slate-700 shadow-2xl relative flex flex-col overflow-hidden"
-                onClick={e => e.stopPropagation()}
-            >
-                {/* Кнопка закрытия */}
-                <div className="absolute top-4 right-4 z-10">
-                    <button
-                        onClick={onClose}
-                        className="p-2 bg-slate-950/50 hover:bg-red-500/80 rounded-full text-white transition-colors border border-slate-700/50 backdrop-blur-sm"
-                    >
-                        <X size={24} />
-                    </button>
-                </div>
-
+    return (
+        <InventoryDialog title={project.Name} kind="project" onClose={onClose}>
                 {/* Скроллящаяся область контента */}
-                <div className="overflow-y-auto p-6 md:p-10 space-y-8 h-full custom-scrollbar">
+                <div className="inventory-page space-y-8">
                     {/* Header Block */}
                     <div className="flex flex-col md:flex-row gap-8 items-start pt-4">
                         <div className="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-2xl">
                             <img
-                                src={project.ImageUrl || "https://via.placeholder.com/150/1e293b/FFFFFF?text=Icon"}
+                                src={project.ImageUrl || "/Data/Content/Default.png"}
                                 alt={project.Name}
                                 className="w-full h-full object-cover"
                             />
                         </div>
                         <div className="flex-1 space-y-4 pr-8">
                             <div>
-                                <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{project.Name}</h2>
                                 <div className="flex flex-wrap gap-2">
                                     {project.Platform.map((tag, i) => (
                                         <span key={i} className={`text-sm px-3 py-1 rounded-md font-medium border ${i === 0 ? 'bg-blue-900/30 border-blue-700 text-blue-300' : 'bg-slate-800 border-slate-700 text-slate-400'}`}>
@@ -442,34 +298,16 @@ const ProjectModal = ({ project, onClose }) => {
                         )}
                     </div>
                 </div>
-            </div>
-        </div>,
-        document.body
+        </InventoryDialog>
     );
 };
 
 const CompanyModal = ({ company, onClose, onViewProjects }) => {
     if (!company) return null;
 
-    return createPortal(
-        <div
-            className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-900/90 backdrop-blur-sm p-4 animate-fade-in"
-            onClick={onClose}
-        >
-            <div
-                className="bg-slate-900 w-full max-w-6xl max-h-[80vh] rounded-2xl border border-slate-700 shadow-2xl relative flex flex-col overflow-hidden"
-                onClick={e => e.stopPropagation()}
-            >
-                <div className="absolute top-4 right-4 z-10">
-                    <button
-                        onClick={onClose}
-                        className="p-2 bg-slate-950/50 hover:bg-red-500/80 rounded-full text-white transition-colors border border-slate-700/50 backdrop-blur-sm"
-                    >
-                        <X size={24} />
-                    </button>
-                </div>
-
-                <div className="overflow-y-auto p-8 md:p-12 space-y-8 custom-scrollbar">
+    return (
+        <InventoryDialog title={company.Name} kind="company" onClose={onClose}>
+                <div className="inventory-page space-y-8">
                     <div className="flex flex-col md:flex-row gap-8 items-center md:items-start text-center md:text-left">
                         <div className="w-24 h-24 md:w-32 md:h-32 flex-shrink-0 bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 shadow-xl">
                             {company.LogoUrl ? (
@@ -486,7 +324,6 @@ const CompanyModal = ({ company, onClose, onViewProjects }) => {
                         </div>
                         <div className="flex-1 space-y-4">
                             <div>
-                                <h2 className="text-3xl font-bold text-white mb-2">{company.Name}</h2>
                                 <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
                                     <div className="flex items-center gap-2 text-blue-400 font-medium font-medium">
                                         <Calendar size={16} />
@@ -536,9 +373,7 @@ const CompanyModal = ({ company, onClose, onViewProjects }) => {
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>,
-        document.body
+        </InventoryDialog>
     );
 };
 
@@ -567,8 +402,9 @@ const PortfolioView = ({ data, filter, setFilter }) => {
 
     return (
         <div className="animate-fade-in space-y-8">
+            <div className="section-heading"><h1>Портфолио</h1></div>
             {/* Filter Bar */}
-            <div className="flex flex-wrap gap-2 justify-center pb-4 border-b border-slate-800">
+            <div className="project-filters flex flex-wrap gap-2 pb-4 border-b border-slate-800">
                 {companies.map(company => (
                     <button
                         key={company}
@@ -578,14 +414,14 @@ const PortfolioView = ({ data, filter, setFilter }) => {
                             : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white'
                             }`}
                     >
-                        {company}
+                        {company === 'All' ? 'Все проекты' : company}
                     </button>
                 ))}
             </div>
 
             {/* Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {filteredProjects.map((project, idx) => (
+                {filteredProjects.map((project) => (
                     <ProjectCard
                         // ОБНОВЛЕНИЕ: Используем уникальный ключ вместо индекса, 
                         // чтобы React пересоздавал компонент при смене сортировки
@@ -596,6 +432,7 @@ const PortfolioView = ({ data, filter, setFilter }) => {
                 ))}
             </div>
 
+            {filteredProjects.length === 0 && <p className="empty-state">В этой категории пока нет проектов. Выберите другую компанию или «Все проекты».</p>}
             {/* Modal */}
             <ProjectModal
                 project={selectedProject}
@@ -605,14 +442,17 @@ const PortfolioView = ({ data, filter, setFilter }) => {
     );
 };
 
-const ContactsView = () => {
+const ContactsView = ({ open, onClose }) => {
     const [contact, setContact] = useState('');
     const [message, setMessage] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submission, setSubmission] = useState(null);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (isSubmitting) return;
         setIsSubmitting(true);
+        setSubmission(null);
 
         // Структура данных согласно запросу
         const payload = {
@@ -630,36 +470,44 @@ const ContactsView = () => {
             });
 
             if (response.ok) {
-                alert("Сообщение успешно отправлено! Я свяжусь с вами в ближайшее время.");
+                setSubmission({ success: true, text: "Сообщение доставлено! Свяжусь с вами в ближайшее время." });
                 setContact('');
                 setMessage('');
             } else {
-                alert("Произошла ошибка при отправке. Пожалуйста, попробуйте позже или напишите мне в Telegram.");
+                setSubmission({ success: false, text: "Не удалось отправить. Попробуйте ещё раз или напишите в Telegram." });
             }
         } catch (error) {
             console.error("Ошибка отправки формы:", error);
-            alert("Ошибка сети. Пожалуйста, проверьте подключение и попробуйте снова.");
+            setSubmission({ success: false, text: "Ошибка сети. Проверьте подключение и попробуйте снова." });
         } finally {
             setIsSubmitting(false);
         }
     };
 
-    return (
-        <div className="animate-fade-in max-w-2xl mx-auto space-y-12">
-            <div className="text-center space-y-4">
-                <h2 className="text-3xl font-bold text-white">Связаться со мной</h2>
-                <p className="text-slate-400">
-                    Открыт к предложениям о работе и интересным проектам.
-                </p>
-            </div>
+    if (!open) return null;
 
-            <div className="bg-slate-800 p-8 rounded-2xl border border-slate-700 shadow-xl">
-                <form onSubmit={handleSubmit} className="space-y-6">
+    return (
+        <InventoryDialog title="Связаться со мной" kind="contact" onClose={onClose}>
+            <div className="contact-lobby">
+                <aside className="contact-briefing">
+                    <h3>Обсудим проект</h3>
+                    <p>Расскажите о задаче и оставьте контакт для ответа.</p>
+                    <div className="contact-player"><img src="/Data/Content/Ava.jpg" alt="Владимир Васильев" /><div><strong>Владимир Васильев</strong></div></div>
+                    <div className="contact-socials">
+                        <SocialButton href={SOCIAL_LINKS.telegram} icon={Send} label="Telegram" />
+                        <SocialButton href={SOCIAL_LINKS.linkedin} icon={Linkedin} label="LinkedIn" />
+                        <SocialButton href={SOCIAL_LINKS.headhunter} icon={Briefcase} label="HeadHunter" />
+                        <SocialButton href={SOCIAL_LINKS.github} icon={Github} label="GitHub" />
+                    </div>
+                </aside>
+                <div className="contact-form-panel">
+                <form onSubmit={handleSubmit} className="space-y-6" aria-busy={isSubmitting}>
                     <div>
-                        <label className="block text-sm font-medium text-slate-300 mb-2">
+                        <label htmlFor="contact" className="block text-sm font-medium text-slate-300 mb-2">
                             Ваш контакт (Email / Telegram) <span className="text-red-500">*</span>
                         </label>
                         <input
+                            id="contact"
                             type="text"
                             required
                             value={contact}
@@ -670,10 +518,11 @@ const ContactsView = () => {
                         />
                     </div>
                     <div>
-                        <label className="block text-sm font-medium text-slate-300 mb-2">
+                        <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-2">
                             Сообщение
                         </label>
                         <textarea
+                            id="message"
                             rows="4"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
@@ -682,36 +531,15 @@ const ContactsView = () => {
                             className="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
                         />
                     </div>
-                    <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className={`w-full font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-all ${isSubmitting
-                            ? 'bg-slate-700 text-slate-400 cursor-not-allowed'
-                            : 'bg-blue-600 hover:bg-blue-500 text-white'
-                            }`}
-                    >
-                        {isSubmitting ? (
-                            <>
-                                <div className="animate-spin rounded-full h-5 w-5 border-2 border-slate-400 border-t-transparent"></div>
-                                <span>Отправка...</span>
-                            </>
-                        ) : (
-                            <>
-                                <Send size={18} />
-                                <span>Отправить</span>
-                            </>
-                        )}
+                    <button type="submit" disabled={isSubmitting} className="contact-play" aria-label={isSubmitting ? 'Отправка сообщения' : 'Отправить сообщение'}>
+                        <span className="contact-play-icon">{isSubmitting ? <LoaderCircle size={26} className="animate-spin" /> : <Play size={26} fill="currentColor" />}</span>
+                        <span className="contact-play-copy"><strong>{isSubmitting ? 'SENDING...' : 'PLAY'}</strong><span>{isSubmitting ? 'Отправка сообщения…' : 'Отправить сообщение'}</span></span>
                     </button>
+                    {submission && <p role={submission.success ? 'status' : 'alert'} className={`contact-feedback${submission.success ? ' is-success' : ''}`}>{submission.text}</p>}
                 </form>
+                </div>
             </div>
-
-            <div className="flex justify-center gap-6">
-                <SocialButton href={SOCIAL_LINKS.telegram} icon={Send} label="Telegram" />
-                <SocialButton href={SOCIAL_LINKS.linkedin} icon={Linkedin} label="LinkedIn" />
-                <SocialButton href={SOCIAL_LINKS.headhunter} icon={Briefcase} label="HeadHunter" />
-                <SocialButton href={SOCIAL_LINKS.github} icon={Github} label="GitHub" />
-            </div>
-        </div>
+        </InventoryDialog>
     );
 };
 
@@ -720,24 +548,39 @@ const SocialButton = ({ href, icon: Icon, label }) => (
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex flex-col items-center gap-2 text-slate-400 hover:text-blue-400 transition-colors group"
+        className="contact-social-button"
     >
-        <div className="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center border border-slate-700 group-hover:border-blue-500 group-hover:bg-slate-700 transition-all">
-            <Icon size={24} />
-        </div>
-        <span className="text-xs font-medium">{label}</span>
+        {React.createElement(Icon, { size: 24 })}
+        <span>{label}</span>
     </a>
 );
 
 export default function App() {
+    const [design, setDesign] = useState(() => {
+        try { return localStorage.getItem('portfolio-design') === 'arcade' ? 'arcade' : 'neon'; }
+        catch { return 'neon'; }
+    });
+    useEffect(() => {
+        document.body.dataset.design = design;
+        document.querySelector('link[rel="icon"]')?.setAttribute('href', `/favicon-${design}.svg`);
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', design === 'arcade' ? '#fffdf7' : '#151620');
+        try { localStorage.setItem('portfolio-design', design); } catch { /* Storage can be disabled. */ }
+    }, [design]);
     // Use the fragment for direct links so analytics query parameters stay untouched.
     const [activeTab, setActiveTab] = useState(() =>
         window.location.hash === '#portfolio' ? 'portfolio' : 'roadmap'
     );
     const [portfolioData, setPortfolioData] = useState([]);
     const [portfolioFilter, setPortfolioFilter] = useState('All');
+    const [contactsOpen, setContactsOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const handleTabChange = (tab) => {
+        if (tab === 'contacts') { setContactsOpen(true); return; }
+        setActiveTab(tab);
+        window.scrollTo({ top: 0, behavior: 'instant' });
+    };
 
     const handleViewProjects = (companyName) => {
         setPortfolioFilter(companyName);
@@ -747,7 +590,7 @@ export default function App() {
 
     useEffect(() => {
 
-        document.title = "Vladimir Vasilev portfolio";
+        document.title = "voodya.dev · Unity Developer";
         // Логика отправки данных о визите
         const reportVisit = async () => {
             // Получаем параметры из URL после знака вопроса
@@ -836,14 +679,17 @@ export default function App() {
 
     // ОБНОВЛЕНИЕ: Добавлен overflow-x-hidden для предотвращения горизонтальной прокрутки
     return (
-        <div className="min-h-screen bg-slate-900 text-slate-100 font-sans selection:bg-blue-500/30 overflow-x-hidden">
+        <div className="game-app min-h-screen text-slate-100 font-sans selection:bg-blue-500/30 overflow-x-hidden">
 
+            <GameBackdrop design={design} />
+            <DesignSelector design={design} onChange={setDesign} />
+            <a href="#main-content" className="skip-link">Перейти к содержимому</a>
             {/* HEADER / NAV */}
-            <header className="sticky top-0 z-40 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+            <header className="game-header sticky top-0 z-40 backdrop-blur-md border-b border-slate-800">
                 <div className="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
                     <div className="text-xl font-bold tracking-tight text-white flex items-center gap-2">
-                        <Globe className="text-blue-500" />
-                        <span>Васильев Владимир</span>
+                        <span className="brand-icon"><Gamepad2 size={23} /></span>
+                        <span className="brand-name">voodya<span>.dev</span></span>
                     </div>
 
                     <div className="flex flex-wrap items-center justify-center gap-2">
@@ -851,19 +697,19 @@ export default function App() {
                         <nav className="flex flex-wrap justify-center gap-2">
                             <TabButton
                                 active={activeTab === 'roadmap'}
-                                onClick={() => setActiveTab('roadmap')}
+                                onClick={() => handleTabChange('roadmap')}
                                 icon={Map}
-                                label="Роадмап"
+                                label="Опыт"
                             />
                             <TabButton
                                 active={activeTab === 'portfolio'}
-                                onClick={() => setActiveTab('portfolio')}
+                                onClick={() => handleTabChange('portfolio')}
                                 icon={Briefcase}
                                 label="Портфолио"
                             />
                             <TabButton
-                                active={activeTab === 'contacts'}
-                                onClick={() => setActiveTab('contacts')}
+                                active={contactsOpen}
+                                onClick={() => handleTabChange('contacts')}
                                 icon={Mail}
                                 label="Контакты"
                             />
@@ -872,20 +718,22 @@ export default function App() {
                             href="https://calendly.com/vvvjobrigit/1-hour-one-on-one"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:bg-blue-500 hover:shadow-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900 md:px-5"
+                            className="meeting-link inline-flex items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white shadow-lg shadow-blue-500/30 transition-all duration-300 hover:bg-blue-500 hover:shadow-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-slate-900 md:px-5"
                         >
                             <Calendar size={18} />
-                            <span>Запланировать встречу сейчас</span>
+                            <span>Запланировать встречу</span><ArrowUpRight size={16} />
                         </a>
                     </div>
                 </div>
             </header>
 
             {/* MAIN CONTENT AREA */}
-            <main className="max-w-6xl mx-auto px-4 py-8 md:py-12 min-h-[80vh]">
+            <main id="main-content" className="game-main max-w-6xl mx-auto px-4 py-8 md:py-12 min-h-[80vh]">
                 {activeTab === 'roadmap' && (
                     <RoadmapView
                         data={portfolioData}
+                        onPortfolio={() => { setPortfolioFilter('All'); handleTabChange('portfolio'); }}
+                        onContact={() => handleTabChange('contacts')}
                         onViewProjects={handleViewProjects}
                     />
                 )}
@@ -896,12 +744,12 @@ export default function App() {
                         setFilter={setPortfolioFilter}
                     />
                 )}
-                {activeTab === 'contacts' && <ContactsView />}
             </main>
 
+            <ContactsView open={contactsOpen} onClose={() => setContactsOpen(false)} />
             {/* FOOTER */}
-            <footer className="border-t border-slate-800 py-8 text-center text-slate-500 text-sm">
-                <p>© {new Date().getFullYear()} Unity Developer Portfolio. All rights reserved.</p>
+            <footer className="game-footer border-t border-slate-800 py-8 text-slate-500 text-sm">
+                <p>© {new Date().getFullYear()} Владимир Васильев</p>
             </footer>
 
             {/* GLOBAL STYLES FOR ANIMATIONS */}
@@ -918,14 +766,14 @@ export default function App() {
           width: 8px;
         }
         ::-webkit-scrollbar-track {
-          background: #0f172a; 
+          background: var(--page);
         }
         ::-webkit-scrollbar-thumb {
-          background: #334155; 
+          background: var(--line);
           border-radius: 4px;
         }
         ::-webkit-scrollbar-thumb:hover {
-          background: #475569; 
+          background: var(--subtle);
         }
       `}</style>
         </div>
